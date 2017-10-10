@@ -52,7 +52,7 @@ public class LoginTestDriverCases extends TestDriver {
 	 * @throws InterruptedException 
 	 * 
 	 */
-	@Test(priority=2,dependsOnMethods="verifyTitle")
+	@Test(priority=2,dependsOnMethods="verifyTitle",description="Positive Testcase")
 	public void verifyLogin() throws InterruptedException  {
 		test = report.createTest("Login in the Application");
 		LoginPage login= PageFactory.initElements(driver, LoginPage.class);
