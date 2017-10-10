@@ -116,7 +116,7 @@ public class LoginTestDriverCases extends TestDriver {
 	 * @throws InterruptedException 
 	 * 
 	 */
-	@Test(priority=3,dependsOnMethods="verifyLogin")
+	@Test(priority=3,dependsOnMethods="verifyLogin",description="Negative Testcase")
 	public void verifyLogout() throws InterruptedException {
 		test = report.createTest("Logging out of the Application");
 		HomePage logout = PageFactory.initElements(driver, HomePage.class);
@@ -153,7 +153,7 @@ public class LoginTestDriverCases extends TestDriver {
 	 * @throws InterruptedException 
 	 * 
 	 */
-	@Test(priority=4,dependsOnMethods="verifyLogout")
+	@Test(priority=4,dependsOnMethods="verifyLogout",description="Negative Testcase")
 	public void wrongUserNameEntered() throws InterruptedException {
 		test = report.createTest("Wrong UserName Entered");
 		LoginPage login= PageFactory.initElements(driver, LoginPage.class);
