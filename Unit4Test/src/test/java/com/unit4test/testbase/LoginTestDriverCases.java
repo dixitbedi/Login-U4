@@ -212,7 +212,7 @@ public class LoginTestDriverCases extends TestDriver {
 	 * @throws InterruptedException 
 	 * 
 	 */
-	@Test(priority=5,dependsOnMethods="verifyLogout")
+	@Test(priority=5,dependsOnMethods="verifyLogout",description="Negative Testcase")
 	public void wrongClientNameEntered() throws InterruptedException {
 		test = report.createTest("Wrong Client Name Entered");
 		LoginPage login= PageFactory.initElements(driver, LoginPage.class);
