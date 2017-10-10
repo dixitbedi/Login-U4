@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MultiBrowserSuite]">
+  <parameter name="browser" value="Chrome"/>
+  <test name="TestChrome(failed)" preserve-order="true">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.unit4test.base.TestDriverCases">
+        <methods>
+          <include name="verifyLogin"/>
+          <include name="blankLoginEntered"/>
+          <include name="closing"/>
+          <include name="wrongClientNameEntered"/>
+          <include name="wrongPasswordEntered"/>
+          <include name="wrongUserNameEntered"/>
+          <include name="verifyLogout"/>
+          <include name="verifyTitle"/>
+          <include name="setBrowser"/>
+        </methods>
+      </class> <!-- com.unit4test.base.TestDriverCases -->
+    </classes>
+  </test> <!-- TestChrome(failed) -->
+</suite> <!-- Failed suite [MultiBrowserSuite] -->
