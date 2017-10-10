@@ -59,11 +59,8 @@ public class TestDriver {
 			System.out.println("Launching Firefox");
 			System.setProperty("webdriver.firefox.marionette", Constants.FIREFOXPATH);
 			DesiredCapabilities dc = DesiredCapabilities.firefox();
-			FirefoxProfile profile = new FirefoxProfile();
-			dc.setPlatform(Platform.WIN10);
-			dc.setCapability(FirefoxDriver.PROFILE,profile);
-			dc.setCapability("marionette", true);
-			driver = new FirefoxDriver(dc);
+			dc.setPlatform(Platform.WINDOWS);
+			driver = new FirefoxDriver();
 		}
 		else if (browser.equalsIgnoreCase("Chrome")) {
 			System.setProperty("webdriver.chrome.driver", 
@@ -76,7 +73,6 @@ public class TestDriver {
 		}
 		driver.get(Constants.URL);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
 	}
 	
 	@AfterMethod
