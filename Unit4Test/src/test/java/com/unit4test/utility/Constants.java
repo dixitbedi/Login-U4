@@ -30,6 +30,8 @@ public class Constants {
 	
 	public static final String FIREFOXPATH = "D:\\Drivers\\geckodriver.exe";
 	
+	public static final String INTERNETEXPLORERPATH = "D:\\Drivers\\IEDriverServer_Win32_3.6.0\\IEDriverServer.exe";
+	
 	public static final String SCREENSHOTS = "C:\\Users\\dixit.bedi\\eclipse-workspace\\Unit4Test\\screenshots\\";
 	
 	public static final String SCREENSHOTEXTENSION = ".png";

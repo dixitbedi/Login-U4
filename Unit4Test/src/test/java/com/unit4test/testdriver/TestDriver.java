@@ -14,6 +14,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestResult;
@@ -52,7 +53,7 @@ public class TestDriver {
 
 	@Parameters("browser")
 	@BeforeTest
-	public void setBrowser(String browser)
+	public void setBrowser(String browser) throws InterruptedException
 	{
 		if (browser.equalsIgnoreCase("Firefox")) {
 			System.out.println("Launching Firefox");
@@ -66,13 +67,17 @@ public class TestDriver {
 					Constants.CHROMEPATH);
 			driver = new ChromeDriver();
 
+		}else if(browser.equalsIgnoreCase("IE")) {
+			System.setProperty("webdriver.ie.driver", Constants.INTERNETEXPLORERPATH);
+			driver = new InternetExplorerDriver();
 		}
 		else {
 			throw new IllegalArgumentException("Invalid browser value!!");
 		}
+		driver.manage().deleteAllCookies();
 		driver.get(Constants.URL);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
+		driver.manage().window().maximize();	
 	}
 	
 	@AfterMethod

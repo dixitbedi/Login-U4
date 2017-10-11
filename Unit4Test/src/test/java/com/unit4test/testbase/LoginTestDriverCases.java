@@ -5,6 +5,8 @@ import static org.testng.Assert.assertEquals;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import com.unit4test.pageobjects.HomePage;
@@ -27,13 +29,18 @@ public class LoginTestDriverCases extends TestDriver {
 	 * This Test Case verifies the 
 	 * page opened is the expected 
 	 * login page using title
+	 * @throws InterruptedException 
 	 * 
 	 */
 	@Test(priority=1)
-	public void verifyTitle() {
+	public void verifyTitle() throws InterruptedException {
+		
 		test = report.createTest("Verify Title");
 		test.info("Fetching the page Title");
+/*		WebDriverWait wait = new WebDriverWait(driver, 10); 
+		wait.until(ExpectedConditions.titleContains("ERP.HappyNegotiation.Web"));*/
 		//Actual Title Displayed
+		driver.get(driver.getCurrentUrl());
 		String actualtitle = driver.getTitle();
 		//Expected Title Displayed
 		String expectedtitle = Constants.TITLE;

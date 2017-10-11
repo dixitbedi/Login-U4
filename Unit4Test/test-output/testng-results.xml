@@ -2,31 +2,31 @@
 <testng-results skipped="0" failed="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression LoginSuite" duration-ms="47140" started-at="2017-10-11T09:12:34Z" finished-at="2017-10-11T09:13:21Z">
+  <suite name="Regression LoginSuite" duration-ms="85071" started-at="2017-10-11T12:29:00Z" finished-at="2017-10-11T12:30:25Z">
     <groups>
     </groups>
-    <test name="Chrome Test" duration-ms="47140" started-at="2017-10-11T09:12:34Z" finished-at="2017-10-11T09:13:21Z">
+    <test name="Chrome Test" duration-ms="85071" started-at="2017-10-11T12:29:00Z" finished-at="2017-10-11T12:30:25Z">
       <class name="com.unit4test.testbase.LoginTestDriverCases">
-        <test-method status="PASS" signature="config()[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="config" is-config="true" duration-ms="204" started-at="2017-10-11T14:42:34Z" finished-at="2017-10-11T14:42:34Z">
+        <test-method status="PASS" signature="config()[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="config" is-config="true" duration-ms="200" started-at="2017-10-11T17:59:00Z" finished-at="2017-10-11T17:59:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- config -->
-        <test-method status="PASS" signature="setBrowser(java.lang.String)[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="setBrowser" is-config="true" duration-ms="7470" started-at="2017-10-11T14:42:34Z" finished-at="2017-10-11T14:42:41Z">
+        <test-method status="PASS" signature="setBrowser(java.lang.String)[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="setBrowser" is-config="true" duration-ms="6161" started-at="2017-10-11T17:59:00Z" finished-at="2017-10-11T17:59:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[IE]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowser -->
-        <test-method status="PASS" signature="verifyTitle()[pri:1, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="verifyTitle" duration-ms="70" started-at="2017-10-11T14:42:41Z" finished-at="2017-10-11T14:42:42Z">
+        <test-method status="PASS" signature="verifyTitle()[pri:1, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="verifyTitle" duration-ms="338" started-at="2017-10-11T17:59:06Z" finished-at="2017-10-11T17:59:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="tearDown" is-config="true" duration-ms="416" started-at="2017-10-11T14:42:42Z" finished-at="2017-10-11T14:42:42Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="tearDown" is-config="true" duration-ms="340" started-at="2017-10-11T17:59:06Z" finished-at="2017-10-11T17:59:07Z">
           <params>
             <param index="0">
               <value>
@@ -37,11 +37,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyLogin()[pri:2, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="verifyLogin" duration-ms="4034" started-at="2017-10-11T14:42:42Z" description="Positive Testcase" depends-on-methods="com.unit4test.testbase.LoginTestDriverCases.verifyTitle" finished-at="2017-10-11T14:42:46Z">
+        <test-method status="PASS" signature="verifyLogin()[pri:2, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="verifyLogin" duration-ms="8562" started-at="2017-10-11T17:59:07Z" description="Positive Testcase" depends-on-methods="com.unit4test.testbase.LoginTestDriverCases.verifyTitle" finished-at="2017-10-11T17:59:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="tearDown" is-config="true" duration-ms="72" started-at="2017-10-11T14:42:46Z" finished-at="2017-10-11T14:42:46Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="tearDown" is-config="true" duration-ms="71" started-at="2017-10-11T17:59:15Z" finished-at="2017-10-11T17:59:15Z">
           <params>
             <param index="0">
               <value>
@@ -52,11 +52,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyLogout()[pri:3, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="verifyLogout" duration-ms="2233" started-at="2017-10-11T14:42:46Z" description="Negative Testcase" depends-on-methods="com.unit4test.testbase.LoginTestDriverCases.verifyLogin" finished-at="2017-10-11T14:42:48Z">
+        <test-method status="PASS" signature="verifyLogout()[pri:3, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="verifyLogout" duration-ms="4545" started-at="2017-10-11T17:59:15Z" description="Negative Testcase" depends-on-methods="com.unit4test.testbase.LoginTestDriverCases.verifyLogin" finished-at="2017-10-11T17:59:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogout -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="tearDown" is-config="true" duration-ms="52" started-at="2017-10-11T14:42:48Z" finished-at="2017-10-11T14:42:48Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="tearDown" is-config="true" duration-ms="101" started-at="2017-10-11T17:59:20Z" finished-at="2017-10-11T17:59:20Z">
           <params>
             <param index="0">
               <value>
@@ -67,11 +67,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="wrongUserNameEntered()[pri:4, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="wrongUserNameEntered" duration-ms="3863" started-at="2017-10-11T14:42:48Z" description="Negative Testcase" depends-on-methods="com.unit4test.testbase.LoginTestDriverCases.verifyLogout" finished-at="2017-10-11T14:42:52Z">
+        <test-method status="PASS" signature="wrongUserNameEntered()[pri:4, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="wrongUserNameEntered" duration-ms="8795" started-at="2017-10-11T17:59:20Z" description="Negative Testcase" depends-on-methods="com.unit4test.testbase.LoginTestDriverCases.verifyLogout" finished-at="2017-10-11T17:59:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrongUserNameEntered -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="tearDown" is-config="true" duration-ms="51" started-at="2017-10-11T14:42:52Z" finished-at="2017-10-11T14:42:52Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="tearDown" is-config="true" duration-ms="74" started-at="2017-10-11T17:59:29Z" finished-at="2017-10-11T17:59:29Z">
           <params>
             <param index="0">
               <value>
@@ -82,11 +82,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="wrongClientNameEntered()[pri:5, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="wrongClientNameEntered" duration-ms="3524" started-at="2017-10-11T14:42:52Z" depends-on-methods="com.unit4test.testbase.LoginTestDriverCases.verifyLogout" finished-at="2017-10-11T14:42:56Z">
+        <test-method status="PASS" signature="wrongClientNameEntered()[pri:5, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="wrongClientNameEntered" duration-ms="7980" started-at="2017-10-11T17:59:29Z" depends-on-methods="com.unit4test.testbase.LoginTestDriverCases.verifyLogout" finished-at="2017-10-11T17:59:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrongClientNameEntered -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="tearDown" is-config="true" duration-ms="48" started-at="2017-10-11T14:42:56Z" finished-at="2017-10-11T14:42:56Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="tearDown" is-config="true" duration-ms="57" started-at="2017-10-11T17:59:37Z" finished-at="2017-10-11T17:59:37Z">
           <params>
             <param index="0">
               <value>
@@ -97,11 +97,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="wrongPasswordEntered()[pri:6, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="wrongPasswordEntered" duration-ms="3698" started-at="2017-10-11T14:42:56Z" depends-on-methods="com.unit4test.testbase.LoginTestDriverCases.verifyLogout" finished-at="2017-10-11T14:43:00Z">
+        <test-method status="PASS" signature="wrongPasswordEntered()[pri:6, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="wrongPasswordEntered" duration-ms="7904" started-at="2017-10-11T17:59:37Z" depends-on-methods="com.unit4test.testbase.LoginTestDriverCases.verifyLogout" finished-at="2017-10-11T17:59:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrongPasswordEntered -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="tearDown" is-config="true" duration-ms="105" started-at="2017-10-11T14:43:00Z" finished-at="2017-10-11T14:43:00Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="tearDown" is-config="true" duration-ms="54" started-at="2017-10-11T17:59:45Z" finished-at="2017-10-11T17:59:45Z">
           <params>
             <param index="0">
               <value>
@@ -112,11 +112,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="wrongUsernameClientEntered()[pri:7, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="wrongUsernameClientEntered" duration-ms="3715" started-at="2017-10-11T14:43:00Z" depends-on-methods="com.unit4test.testbase.LoginTestDriverCases.verifyLogout" finished-at="2017-10-11T14:43:03Z">
+        <test-method status="PASS" signature="wrongUsernameClientEntered()[pri:7, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="wrongUsernameClientEntered" duration-ms="7846" started-at="2017-10-11T17:59:45Z" depends-on-methods="com.unit4test.testbase.LoginTestDriverCases.verifyLogout" finished-at="2017-10-11T17:59:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrongUsernameClientEntered -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="tearDown" is-config="true" duration-ms="87" started-at="2017-10-11T14:43:03Z" finished-at="2017-10-11T14:43:03Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="tearDown" is-config="true" duration-ms="51" started-at="2017-10-11T17:59:53Z" finished-at="2017-10-11T17:59:53Z">
           <params>
             <param index="0">
               <value>
@@ -127,11 +127,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="wrongClientPasswordEntered()[pri:8, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="wrongClientPasswordEntered" duration-ms="3675" started-at="2017-10-11T14:43:03Z" depends-on-methods="com.unit4test.testbase.LoginTestDriverCases.verifyLogout" finished-at="2017-10-11T14:43:07Z">
+        <test-method status="PASS" signature="wrongClientPasswordEntered()[pri:8, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="wrongClientPasswordEntered" duration-ms="7966" started-at="2017-10-11T17:59:53Z" depends-on-methods="com.unit4test.testbase.LoginTestDriverCases.verifyLogout" finished-at="2017-10-11T18:00:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrongClientPasswordEntered -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="tearDown" is-config="true" duration-ms="85" started-at="2017-10-11T14:43:07Z" finished-at="2017-10-11T14:43:07Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="tearDown" is-config="true" duration-ms="76" started-at="2017-10-11T18:00:01Z" finished-at="2017-10-11T18:00:01Z">
           <params>
             <param index="0">
               <value>
@@ -142,11 +142,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="wrongUsernamePasswordEntered()[pri:9, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="wrongUsernamePasswordEntered" duration-ms="3632" started-at="2017-10-11T14:43:07Z" depends-on-methods="com.unit4test.testbase.LoginTestDriverCases.verifyLogout" finished-at="2017-10-11T14:43:11Z">
+        <test-method status="PASS" signature="wrongUsernamePasswordEntered()[pri:9, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="wrongUsernamePasswordEntered" duration-ms="7953" started-at="2017-10-11T18:00:01Z" depends-on-methods="com.unit4test.testbase.LoginTestDriverCases.verifyLogout" finished-at="2017-10-11T18:00:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrongUsernamePasswordEntered -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="tearDown" is-config="true" duration-ms="51" started-at="2017-10-11T14:43:11Z" finished-at="2017-10-11T14:43:11Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="tearDown" is-config="true" duration-ms="47" started-at="2017-10-11T18:00:09Z" finished-at="2017-10-11T18:00:09Z">
           <params>
             <param index="0">
               <value>
@@ -157,11 +157,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="wrongUsernameClientPasswordEntered()[pri:10, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="wrongUsernameClientPasswordEntered" duration-ms="3754" started-at="2017-10-11T14:43:11Z" depends-on-methods="com.unit4test.testbase.LoginTestDriverCases.verifyLogout" finished-at="2017-10-11T14:43:15Z">
+        <test-method status="PASS" signature="wrongUsernameClientPasswordEntered()[pri:10, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="wrongUsernameClientPasswordEntered" duration-ms="6993" started-at="2017-10-11T18:00:09Z" depends-on-methods="com.unit4test.testbase.LoginTestDriverCases.verifyLogout" finished-at="2017-10-11T18:00:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrongUsernameClientPasswordEntered -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="tearDown" is-config="true" duration-ms="50" started-at="2017-10-11T14:43:15Z" finished-at="2017-10-11T14:43:15Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="tearDown" is-config="true" duration-ms="41" started-at="2017-10-11T18:00:16Z" finished-at="2017-10-11T18:00:16Z">
           <params>
             <param index="0">
               <value>
@@ -172,11 +172,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="blankLoginEntered()[pri:11, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="blankLoginEntered" duration-ms="415" started-at="2017-10-11T14:43:15Z" depends-on-methods="com.unit4test.testbase.LoginTestDriverCases.verifyLogout" finished-at="2017-10-11T14:43:15Z">
+        <test-method status="PASS" signature="blankLoginEntered()[pri:11, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="blankLoginEntered" duration-ms="3224" started-at="2017-10-11T18:00:16Z" depends-on-methods="com.unit4test.testbase.LoginTestDriverCases.verifyLogout" finished-at="2017-10-11T18:00:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- blankLoginEntered -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="tearDown" is-config="true" duration-ms="53" started-at="2017-10-11T14:43:15Z" finished-at="2017-10-11T14:43:15Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="tearDown" is-config="true" duration-ms="93" started-at="2017-10-11T18:00:19Z" finished-at="2017-10-11T18:00:19Z">
           <params>
             <param index="0">
               <value>
@@ -187,7 +187,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="closing()[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="closing" is-config="true" duration-ms="5729" started-at="2017-10-11T14:43:15Z" finished-at="2017-10-11T14:43:21Z">
+        <test-method status="PASS" signature="closing()[pri:0, instance:com.unit4test.testbase.LoginTestDriverCases@2286778]" name="closing" is-config="true" duration-ms="5553" started-at="2017-10-11T18:00:19Z" finished-at="2017-10-11T18:00:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closing -->

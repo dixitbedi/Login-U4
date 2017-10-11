@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression LoginSuite">
+   <test name="Chrome Test">
+      <parameter name="browser" value="IE"/>
+      <classes>
+         <class name="com.unit4test.testbase.LoginTestDriverCases"/>
+      </classes>
+   </test>
+</suite>
