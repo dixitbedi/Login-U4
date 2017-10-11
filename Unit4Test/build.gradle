@@ -8,6 +8,7 @@
 
 // Apply the java-library plugin to add support for Java Library
 apply plugin: 'java-library'
+apply plugin: 'war'
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -26,12 +27,12 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
-	compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.3.0'
-	compile group: 'org.seleniumhq.selenium', name: 'selenium-server', version: '3.3.0'
-	compile group: 'org.seleniumhq.selenium', name: 'selenium-api', version: '3.3.0'
+	compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.6.0'
+	compile group: 'org.seleniumhq.selenium', name: 'selenium-server', version: '3.6.0'
+	compile group: 'org.seleniumhq.selenium', name: 'selenium-api', version: '3.6.0'
 	compile group: 'org.seleniumhq.selenium', name: 'selenium-firefox-driver', version: '3.4.0'
-	compile group: 'org.seleniumhq.selenium', name: 'selenium-support', version: '3.3.0'
-	compile group: 'org.seleniumhq.selenium', name: 'selenium-remote-driver', version: '3.3.0'
+	compile group: 'org.seleniumhq.selenium', name: 'selenium-support', version: '3.6.0'
+	compile group: 'org.seleniumhq.selenium', name: 'selenium-remote-driver', version: '3.6.0'
 	compile group: 'org.seleniumhq.selenium', name: 'selenium-htmlunit-driver', version: '2.52.0'
 	compile group: 'org.seleniumhq.selenium', name: 'selenium', version: '2.0rc2', ext: 'pom'
 	compile group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '3.4.0'
@@ -58,6 +59,7 @@ dependencies {
 task wrapper(type: Wrapper) {
      gradleVersion = '3.5'
 }
+
 test {
     useTestNG {
         suites 'C:/Users/dixit.bedi/git/Login-U4/Unit4Test/testng.xml'

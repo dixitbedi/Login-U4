@@ -34,6 +34,6 @@ public class Constants {
 	
 	public static final String SCREENSHOTEXTENSION = ".png";
 	
-	public static final String EXTENTREPORTPATH = "C:\\Users\\dixit.bedi\\eclipse-workspace\\Unit4Test\\reports\\ExtentReport";
-	
+	public static final String EXTENTREPORTPATH = "C:\\Users\\dixit.bedi\\git\\Login-U4\\Unit4Test\\reports\\ExtentReport";
+
 }

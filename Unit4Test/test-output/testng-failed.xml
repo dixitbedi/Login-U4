@@ -1,61 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" name="Failed suite [Regression LoginSuite]" parallel="methods">
-  <parameter name="browser" value="Firefox"/>
-  <test name="Chrome Test(failed)" parallel="methods" preserve-order="true">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression LoginSuite]">
+  <parameter name="browser" value="Chrome"/>
+  <test name="Chrome Test">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="com.unit4test.testbase.LoginTestDriverCases">
-        <methods>
-          <include name="verifyTitle"/>
-          <include name="blankLoginEntered"/>
-          <include name="wrongUsernamePasswordEntered"/>
-          <include name="wrongUsernameClientEntered"/>
-          <include name="wrongPasswordEntered"/>
-          <include name="wrongUserNameEntered"/>
-          <include name="tearDown"/>
-          <include name="tearDown"/>
-          <include name="wrongClientPasswordEntered"/>
-          <include name="config"/>
-          <include name="closing"/>
-          <include name="config"/>
-          <include name="closing"/>
-          <include name="verifyLogout"/>
-          <include name="setBrowser"/>
-          <include name="setBrowser"/>
-          <include name="verifyLogin"/>
-          <include name="wrongUsernameClientPasswordEntered"/>
-          <include name="wrongClientNameEntered"/>
-        </methods>
-      </class> <!-- com.unit4test.testbase.LoginTestDriverCases -->
+      <class name="com.unit4test.testbase.LoginTestDriverCases"/>
     </classes>
-  </test> <!-- Chrome Test(failed) -->
-  <test name="Firefox Test(failed)" parallel="methods" preserve-order="true">
-    <parameter name="browser" value="Firefox"/>
-    <classes>
-      <class name="com.unit4test.testbase.LoginTestDriverCases">
-        <methods>
-          <include name="verifyTitle"/>
-          <include name="blankLoginEntered"/>
-          <include name="wrongUsernamePasswordEntered"/>
-          <include name="wrongUsernameClientEntered"/>
-          <include name="wrongPasswordEntered"/>
-          <include name="wrongUserNameEntered"/>
-          <include name="tearDown"/>
-          <include name="tearDown"/>
-          <include name="wrongClientPasswordEntered"/>
-          <include name="config"/>
-          <include name="closing"/>
-          <include name="config"/>
-          <include name="closing"/>
-          <include name="verifyLogout"/>
-          <include name="setBrowser"/>
-          <include name="setBrowser"/>
-          <include name="verifyLogin"/>
-          <include name="wrongUsernameClientPasswordEntered"/>
-          <include name="wrongClientNameEntered"/>
-        </methods>
-      </class> <!-- com.unit4test.testbase.LoginTestDriverCases -->
-    </classes>
-  </test> <!-- Firefox Test(failed) -->
+  </test> <!-- Chrome Test -->
 </suite> <!-- Failed suite [Regression LoginSuite] -->
