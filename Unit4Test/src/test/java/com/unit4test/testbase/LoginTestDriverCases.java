@@ -4,9 +4,8 @@ import static org.testng.Assert.assertEquals;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.NoSuchFrameException;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import com.unit4test.pageobjects.HomePage;
@@ -104,7 +103,7 @@ public class LoginTestDriverCases extends TestDriver {
 		//Clicking the Login button
 		login.clickLogInButton().click();
 		//Adding Implicit Wait
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 		test.info("Verifying the Logged in user");
 		//Passing the user name of the login user
 		String userlogin = logout.userLogin().getText();
@@ -619,4 +618,18 @@ public class LoginTestDriverCases extends TestDriver {
 		assertEquals(loginerror, Constants.ERRORMESSAGE);
 		test.pass("Not Able to login with Blank details");
 	}
+
+
+public void switchToFrame(int frame)
+{
+    try
+    {
+        driver.switchTo().frame(frame);
+        System.out.println("Navigated to frame with name " + frame);
+    }
+    catch (NoSuchFrameException e)
+    {
+        System.out.println("Unable to locate frame with id " + frame + e.getStackTrace());
+    }
+}
 }
