@@ -38,15 +38,17 @@ dependencies {
 	compile group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '3.4.0'
 	compile group: 'org.seleniumhq.selenium', name: 'selenium-ie-driver', version: '3.6.0'
 	compile group: 'org.seleniumhq.selenium', name: 'selenium-safari-driver', version: '3.4.0'
-	compile group: 'org.seleniumhq.selenium.server', name: 'selenium-server', version: '1.0.3'
 	compile group: 'info.cukes', name: 'cucumber-testng', version: '1.2.5'	
 	compile group: 'org.apache.poi', name: 'poi', version: '3.9'
 	compile group: 'org.apache.poi', name: 'poi-ooxml', version: '3.17'
 	compile group: 'log4j', name: 'log4j', version: '1.2.17'
 	compile group: 'com.relevantcodes', name: 'extentreports', version: '2.41.2'
 	compile group: 'com.aventstack', name: 'extentreports', version: '3.0.7'
-	compile group: 'com.sikulix', name: 'sikulixapi', version: '1.1.0'
 	compile group: 'com.paulhammant', name: 'ngwebdriver', version: '0.9'
+	compile group: 'com.ggasoftware.uitest', name: 'gga-selenium-framework-core', version: '1.0.5'
+	compile group: 'com.ggasoftware.uitest', name: 'gga-selenium-framework-logging', version: '1.0.5'
+	compile group: 'com.ggasoftware.uitest', name: 'gga-selenium-framework-reportng', version: '1.0.5'
+	compile group: 'com.ggasoftware.uitest', name: 'gga-selenium-framework', version: '1.0.5', ext: 'pom'
 	testCompile group: 'org.seleniumhq.selenium.client-drivers', name: 'selenium-java-client-driver', version: '1.0.2'
 	testCompile group: 'org.testng', name: 'testng', version: '6.11'
 	testCompile group: 'org.mockito', name: 'mockito-all', version: '2.0.2-beta'
@@ -60,8 +62,17 @@ task wrapper(type: Wrapper) {
      gradleVersion = '3.5'
 }
 
+
+def suite1 = project.hasProperty("suite1")
+
 test {
-    useTestNG {
-        suites 'C:/Users/dixit.bedi/git/Login-U4/Unit4Test/testng.xml'
+systemProperty "Chrome", "browser"
+    useTestNG() {
+        dependsOn cleanTest
+        useDefaultListeners = true
+
+        if(suite1) {
+             suites 'C:/Users/dixit.bedi/git/Login-U4/Unit4Test/testng.xml'
+        }
     }
 }
